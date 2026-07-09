@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Clínica Adalgisa Castro | Estética Avançada &amp; Bem-estar</title>
+<meta content="Especialista em tratamentos estéticos avançados, harmonização e tecnologias de ponta em Curitiba. Agende sua avaliação personalizada." name="description"/>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-secondary-container": "#006575",
+                "inverse-primary": "#94ccff",
+                "on-error-container": "#93000a",
+                "on-secondary-fixed-variant": "#004e5b",
+                "on-tertiary-fixed": "#2e1600",
+                "tertiary-fixed-dim": "#ffb877",
+                "on-surface": "#181c20",
+                "surface-tint": "#006399",
+                "error-container": "#ffdad6",
+                "on-secondary-fixed": "#001f25",
+                "surface-container-high": "#e6e8ee",
+                "on-tertiary-fixed-variant": "#6c3a00",
+                "on-secondary": "#ffffff",
+                "background": "#f7f9ff",
+                "secondary-fixed": "#a7edff",
+                "on-background": "#181c20",
+                "surface-dim": "#d7dae0",
+                "on-primary-fixed": "#001d32",
+                "surface-bright": "#f7f9ff",
+                "on-surface-variant": "#404850",
+                "secondary-fixed-dim": "#58d6f1",
+                "tertiary": "#864a00",
+                "surface-container": "#ebeef4",
+                "error": "#ba1a1a",
+                "primary": "#005d90",
+                "outline-variant": "#bfc7d1",
+                "surface-container-highest": "#e0e2e8",
+                "on-tertiary": "#ffffff",
+                "on-primary-container": "#f3f7ff",
+                "secondary": "#006878",
+                "on-primary": "#ffffff",
+                "surface": "#f7f9ff",
+                "primary-fixed": "#cde5ff",
+                "outline": "#707881",
+                "on-primary-fixed-variant": "#004b74",
+                "secondary-container": "#69e5ff",
+                "tertiary-fixed": "#ffdcc0",
+                "on-error": "#ffffff",
+                "inverse-on-surface": "#eef1f6",
+                "inverse-surface": "#2d3135",
+                "on-tertiary-container": "#fff6f1",
+                "surface-container-low": "#f1f4f9",
+                "surface-variant": "#e0e2e8",
+                "primary-container": "#0077b6",
+                "surface-container-lowest": "#ffffff",
+                "tertiary-container": "#a95f00",
+                "primary-fixed-dim": "#94ccff"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "xl": "80px",
+                "margin-desktop": "64px",
+                "lg": "48px",
+                "md": "24px",
+                "gutter": "24px",
+                "base": "8px",
+                "xs": "4px",
+                "sm": "12px",
+                "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                "label-sm": ["Inter"],
+                "body-md": ["Manrope"],
+                "headline-lg-mobile": ["Manrope"],
+                "headline-lg": ["Manrope"],
+                "body-lg": ["Manrope"],
+                "body-sm": ["Manrope"],
+                "headline-xl": ["Manrope"],
+                "headline-md": ["Manrope"],
+                "headline-sm": ["Manrope"],
+                "label-md": ["Inter"]
+            },
+            "fontSize": {
+                "label-sm": ["12px", {"lineHeight": "1", "fontWeight": "500"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                "headline-sm": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        background: rgba(247, 249, 255, 0.8);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      .service-card:hover .service-overlay {
+        opacity: 1;
+      }
+      .faq-item[open] .faq-icon {
+        transform: rotate(180deg);
+      }
+    </style>
+<!-- Schema.org -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Clínica Adalgisa Castro",
+      "image": "placeholder",
+      "@id": "",
+      "url": "https://adalgisacastro.com.br",
+      "telephone": "+5541997340484",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Batel, 1230",
+        "addressLocality": "Curitiba",
+        "addressRegion": "PR",
+        "postalCode": "80420-000",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -25.443150,
+        "longitude": -49.286340
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "19:00"
+      }
+    }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full glass-nav z-50 shadow-sm transition-all duration-300">
+<nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">spa</span>
+<span class="font-headline-sm text-headline-sm tracking-tight text-primary">Adalgisa Castro</span>
+</div>
+<div class="hidden md:flex items-center gap-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#servicos">Serviços</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#sobre">Sobre</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#faq">FAQ</a>
+<a class="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:opacity-90 transition-opacity" href="https://wa.me/5541997340484" target="_blank">
+                    Agendar Agora
+                </a>
+</div>
+<!-- Mobile Action -->
+<a class="md:hidden flex items-center justify-center w-10 h-10 bg-primary text-on-primary rounded-full" href="https://wa.me/5541997340484" target="_blank">
+<span class="material-symbols-outlined">calendar_today</span>
+</a>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative overflow-hidden py-xl md:py-24">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-center gap-lg">
+<div class="flex-1 space-y-md z-10">
+<div class="inline-flex items-center gap-2 bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full">
+<span class="material-symbols-outlined text-sm">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Estética de Alta Performance</span>
+</div>
+<h1 class="font-headline-lg-mobile md:font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-surface max-w-2xl">
+                        Sua melhor versão com tecnologia de ponta e cuidado personalizado
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                        Tratamentos estéticos avançados para realçar sua beleza natural com segurança e expertise técnica. Experiência clínica premium em cada detalhe.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<a class="inline-flex items-center justify-center bg-primary text-on-primary h-14 px-8 rounded-lg font-headline-sm text-headline-sm hover:opacity-95 transition-all shadow-lg shadow-primary/20" href="https://wa.me/5541997340484" target="_blank">
+                            Agendar Avaliação
+                        </a>
+<a class="inline-flex items-center justify-center border border-outline text-primary h-14 px-8 rounded-lg font-headline-sm text-headline-sm hover:bg-primary-fixed/30 transition-all" href="#servicos">
+                            Ver Tratamentos
+                        </a>
+</div>
+</div>
+<div class="flex-1 w-full relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative border-8 border-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="A luxurious and modern aesthetic clinic interior featuring minimalist white treatment rooms with soft blue ambient lighting. A professional aesthetician in a white lab coat stands confidently in a clean, brightly lit space. The atmosphere is sterile yet welcoming, utilizing high-key photography with soft shadows and a premium clinical-chic aesthetic consistent with high-end medical wellness centers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtBV3EQOipGouD1hiKiTGb1vjx8CaYytl7i-I43EpqavwuwVkYN6Vnxk_i-_84bWWb0a1LcFVprDEHZkgTTnW_uCrbfbCrotV-zctHbm4jK0yVELi-b3-HWaQPQiwAYFdKKxH47b2nicNaWjQLP1jDiyDHa_OLk5FPvvWcY4INmVMqPEka0cjtfEaX0Db-GPP2FIE9aUTRYpCMkzXmCw9r-3RozLj5Xj4QBUGpSe5wNTa2hfU6CMdH8oJ0BBBLWC4kmZjelHzakGA"/>
+</div>
+<!-- Floating Badge -->
+<div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-xl shadow-xl hidden md:flex items-center gap-4 border border-outline-variant">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-primary">+10 Anos</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">De experiência clínica</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Differentials (Bento Grid Style) -->
+<section class="py-xl bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">A excelência em cada detalhe</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Aliamos ciência e estética para resultados naturais e duradouros.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">precision_manufacturing</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Tecnologia de Ponta</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Equipamentos de última geração aprovados pela ANVISA para segurança total.</p>
+</div>
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Profissionais Experientes</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Equipe técnica qualificada com especialização em procedimentos avançados.</p>
+</div>
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Cuidado Individualizado</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Protocolos exclusivos desenhados especificamente para as suas necessidades.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-xl" id="servicos">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-base mb-16">
+<div>
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase">Tratamentos</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-2">Procedimentos Avançados</h2>
+</div>
+<a class="text-primary font-label-md text-label-md flex items-center gap-1 hover:gap-2 transition-all" href="https://wa.me/5541997340484" target="_blank">
+                        Consultar catálogo completo <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
+<!-- Service 1 -->
+<div class="group relative aspect-[3/4] rounded-xl overflow-hidden border border-outline-variant shadow-sm service-card">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A close-up, high-detail photograph of a clean, healthy face undergoing a professional aesthetic consultation. The lighting is soft and flattering, highlighting glowing skin texture in a medical spa setting. The style is professional, high-end photography with a focus on natural beauty and clinical precision, using a cool-toned light blue and white color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkP9UzbLY5RyXdOpkpj3JIBppj30djAuKb7joDIiHMXLIv-Mhumut2TTRhkvn9YMtmq17DCjEsJ7MQupI38SJGmXiEShSotGxNUz8X8uRFJTZ6a8H1LxvOOGnp9zKZUaOztUFgJQd4S_k-9EYWdbfNdJAx03NCsW8O3QGPEUgujNyDgGQaLPdoKBi0N-g06V3vKvfuSnnnHKv-nb7wwDyS391WK7gpnKBmNO_NTtdujUhZOAKdHHGgBs2bd5tR-z1KHGjatMccuhc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+<div class="absolute bottom-0 left-0 p-lg w-full text-on-primary">
+<h3 class="font-headline-md text-headline-md mb-2">Harmonização Facial</h3>
+<p class="font-body-sm text-body-sm opacity-90 line-clamp-2">Realce seus traços com naturalidade através de preenchimentos e toxina botulínica.</p>
+<div class="mt-4 flex gap-2">
+<span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest">Facial</span>
+<span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest">Natural</span>
+</div>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="group relative aspect-[3/4] rounded-xl overflow-hidden border border-outline-variant shadow-sm service-card">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Macro shot of a dermatologist using a modern medical device on a patient's skin, focusing on the precision of the procedure. Soft blue lighting reflects off clean surgical-grade equipment. The image exudes safety and technological expertise, following a clean-chic clinical aesthetic with shallow depth of field and high clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpIJZhYRk_o7Pfuckv4r5Bk-hg2gCVk5KwUuAhkrWBpnW-yBPx40iQMffXJ7mYwvSAPJcJqxxxhJdubHyplICr4wCjOh0iOoPb92HeC45jVeyMT9htqyW4JO7PUVocMVZEK1Glju7LPCYY81n8lbKGRCIBMfyCVwe3tvQh8sVrIBs5JtmslTxPVTebmWgWoQ3DGiMc83mP1bWgO5Ch_f4qpqmMHuJl5OyrAGanH9a9bIbDINFz6SyyTIF8JLQg5FuDgRcZHqZHgTg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+<div class="absolute bottom-0 left-0 p-lg w-full text-on-primary">
+<h3 class="font-headline-md text-headline-md mb-2">Bioestimuladores</h3>
+<p class="font-body-sm text-body-sm opacity-90 line-clamp-2">Estimule a produção natural de colágeno para uma pele mais firme e rejuvenescida.</p>
+<div class="mt-4 flex gap-2">
+<span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest">Colágeno</span>
+<span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest">Antienvelhecimento</span>
+</div>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="group relative aspect-[3/4] rounded-xl overflow-hidden border border-outline-variant shadow-sm service-card">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A sophisticated treatment room with advanced body contouring equipment. A patient is comfortably positioned in a serene, white and light-blue environment. The visual style is premium and minimalist, emphasizing hygiene and high-tech medical solutions for body aesthetics. Bright, diffused daylight fills the space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTWNatO-faMoDGc6FLsAC1eryEaHHdnngu26OA6Kuynyqk46a1oxYYzbJQFXLnNIWSbyshqFJ9FHfbZob5KkG6u77WV-DWJW2lNtQSUHIubCmxERW5X-AqtoU36fIvrp6sIUDt6qkkVbAMQUKpQIAZilHiblq226PG86whVA9WEvBoKQqCoFAS1Dameuqe-uVaWB41YbAygdMFk_Lap2FY69yUU8mG7XrYzYa5JNc_JZr0U0NlLBtG3GBQX-MjBLyiVTpqpITIk90"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+<div class="absolute bottom-0 left-0 p-lg w-full text-on-primary">
+<h3 class="font-headline-md text-headline-md mb-2">Tratamentos Corporais</h3>
+<p class="font-body-sm text-body-sm opacity-90 line-clamp-2">Tecnologia avançada para redução de medidas, celulite e flacidez corporal.</p>
+<div class="mt-4 flex gap-2">
+<span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest">Corpo</span>
+<span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest">Tecnologia</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-xl bg-surface-container" id="sobre">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col lg:flex-row items-center gap-xl">
+<div class="lg:w-1/2">
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/10 rounded-2xl transition-all group-hover:rotate-2"></div>
+<img class="relative z-10 w-full h-[600px] object-cover rounded-xl shadow-xl" data-alt="A portrait of Adalgisa Castro, a professional blonde woman in her 40s wearing an elegant white medical lab coat. She stands in a high-end, modern aesthetic clinic hallway with glass walls and minimalist decor. Her expression is warm, professional, and trustworthy. The lighting is soft and even, highlighting her authority and the clinical-chic atmosphere of the establishment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvbvqGa1IwRTay1qs4yvdVJOkCRILVUnOSkmfjcCU9-tl3gojs8KwqdgxCssbEDE766mFBiZNojpWqVI6fpbKz7LX4r2pwmtbuia-fbXL05wrOunZxEZTZWy7BBW6t8DjmCG5khy680XeE-Ie5QtrjSbbIgp3wR7kf8GOvEgmqmHKl65ffeyCCzilvCWeoTvWNtarc8b1usht60aEDWqh3EMGYyBbNTtXLh1eK9k6fXWxwkOZuVVCSn7mg-2VXrp7roKrkr3WACM8"/>
+</div>
+</div>
+<div class="lg:w-1/2 space-y-md">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase">Especialista</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Adalgisa Castro</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic">"Minha missão é unir a ciência da estética com a arte do cuidado personalizado, respeitando sempre a individualidade de cada paciente."</p>
+<div class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<p>Com mais de uma década de dedicação à estética avançada, Adalgisa Castro consolidou-se como referência pela sua abordagem técnica e olhar humanizado. Especialista em procedimentos minimamente invasivos, ela busca constantemente as inovações mais seguras do mercado global.</p>
+<p>Sua clínica é o reflexo de sua filosofia: um ambiente onde a tecnologia de ponta se encontra com o acolhimento, garantindo que cada jornada de beleza seja segura, transparente e extraordinária.</p>
+</div>
+<ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-md text-label-md">Pós-graduada em Estética</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-md text-label-md">Speaker em Congressos</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-md text-label-md">+15.000 Procedimentos</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-md text-label-md">Protocolos Exclusivos</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-xl" id="faq">
+<div class="max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Dúvidas Frequentes</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Esclareça os principais pontos sobre os nossos tratamentos.</p>
+</div>
+<div class="space-y-md">
+<details class="group faq-item bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant" open="">
+<summary class="flex justify-between items-center p-md cursor-pointer list-none">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Os procedimentos são dolorosos?</h3>
+<span class="material-symbols-outlined faq-icon transition-transform">expand_more</span>
+</summary>
+<div class="p-md pt-0 text-on-surface-variant font-body-md">
+                            Prezamos pelo seu conforto máximo. Utilizamos técnicas avançadas de aplicação e, quando necessário, anestésicos tópicos ou injetáveis de alta eficácia para garantir uma experiência praticamente indolor.
+                        </div>
+</details>
+<details class="group faq-item bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant">
+<summary class="flex justify-between items-center p-md cursor-pointer list-none">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Qual a duração média dos resultados?</h3>
+<span class="material-symbols-outlined faq-icon transition-transform">expand_more</span>
+</summary>
+<div class="p-md pt-0 text-on-surface-variant font-body-md">
+                            A durabilidade varia conforme o tratamento e o organismo de cada paciente. Harmonizações duram entre 8 a 12 meses, enquanto bioestimuladores podem apresentar benefícios por até 2 anos.
+                        </div>
+</details>
+<details class="group faq-item bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant">
+<summary class="flex justify-between items-center p-md cursor-pointer list-none">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Como é o pós-procedimento?</h3>
+<span class="material-symbols-outlined faq-icon transition-transform">expand_more</span>
+</summary>
+<div class="p-md pt-0 text-on-surface-variant font-body-md">
+                            A maioria dos nossos tratamentos permite o retorno imediato às atividades. Fornecemos um guia detalhado de cuidados pós-procedimento e mantemos suporte via WhatsApp para qualquer dúvida.
+                        </div>
+</details>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-xl">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="bg-primary rounded-2xl p-lg md:p-xl text-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[300px] absolute -right-20 -bottom-20" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="font-headline-xl text-headline-xl text-on-primary mb-md">Pronta para despertar sua melhor versão?</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container mb-xl">Agende sua consulta de avaliação e receba um planejamento estético exclusivo para os seus objetivos.</p>
+<a class="inline-flex items-center gap-3 bg-surface-container-lowest text-primary px-10 py-5 rounded-xl font-headline-md text-headline-md hover:bg-primary-fixed transition-colors" href="https://wa.me/5541997340484" target="_blank">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                            Falar com a Especialista
+                        </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant py-xl">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-xl">
+<div class="md:col-span-2 space-y-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">spa</span>
+<span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">Adalgisa Castro</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+                        Referência em estética avançada, combinando tecnologias globais e cuidado humano para resultados naturais e seguros.
+                    </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 flex items-center justify-center bg-surface-container text-primary rounded-full hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined">camera_alt</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center bg-surface-container text-primary rounded-full hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+</div>
+</div>
+<div class="space-y-md">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Links Úteis</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-primary font-body-sm text-body-sm" href="#servicos">Nossos Serviços</a></li>
+<li><a class="text-on-surface-variant hover:text-primary font-body-sm text-body-sm" href="#sobre">Sobre a Clínica</a></li>
+<li><a class="text-on-surface-variant hover:text-primary font-body-sm text-body-sm" href="#faq">Perguntas Frequentes</a></li>
+<li><a class="text-on-surface-variant hover:text-primary font-body-sm text-body-sm" href="https://wa.me/5541997340484">Agendamentos</a></li>
+</ul>
+</div>
+<div class="space-y-md">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Contato</h4>
+<ul class="space-y-4">
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">Av. Batel, 1230, Batel<br/>Curitiba - PR</span>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">(41) 99734-0484</span>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">Seg a Sex: 09h às 19h</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-xl pt-lg border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Clínica Adalgisa Castro. Todos os direitos reservados.</p>
+<div class="flex gap-md">
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary" href="#">Termos de Uso</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary" href="#">Privacidade</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- WhatsApp Floating Button -->
+<a class="fixed bottom-6 right-6 z-[100] group" href="https://wa.me/5541997340484" target="_blank">
+<span class="absolute -top-12 right-0 bg-white px-3 py-1 rounded shadow-lg text-primary font-label-md text-label-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Agende no WhatsApp</span>
+<div class="w-16 h-16 bg-[#25D366] text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform active:scale-95 animate-bounce">
+<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+</svg>
+</div>
+</a>
+<script>
+        // Header transparency scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('py-2');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.remove('py-2');
+                header.classList.add('py-4');
+            }
+        });
+
+        // FAQ accordion behavior
+        const details = document.querySelectorAll('.faq-item');
+        details.forEach((target) => {
+            target.addEventListener('click', () => {
+                details.forEach((detail) => {
+                    if (detail !== target) {
+                        detail.removeAttribute('open');
+                    }
+                });
+            });
+        });
+    </script>
+</body></html>
